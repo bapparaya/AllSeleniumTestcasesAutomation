@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.automationpractice.base.BaseClass;
@@ -24,9 +25,10 @@ public class DateickerTest extends BaseClass {
 	AutomationTestingPracticepage ap;
 
 @BeforeClass
-void setup()
+@Parameters("browser")
+void setup(String browser)
 {
-	initialize();
+	initialize(browser);
 	 ap = new AutomationTestingPracticepage();
 }
 
@@ -42,10 +44,10 @@ void verifyDatepicker2() {
 	Assert.assertEquals(date2, "15/03/2027");
 }
 
-@AfterClass
-void tearDown() {
-	driver.quit();
-}
+//@AfterClass
+//void tearDown() {
+//	driver.quit();
+//}
 
 
 

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="edge"/>
+<suite name="Suite" parallel="tests" thread-count="3" >
+
   <test name="chromeTest">
-    <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.qa.automationtesting.testcases.DateickerTest"/>
     </classes>
-  </test> <!-- chromeTest -->
+  </test> <!-- Test -->
+  
   <test name="edgeTest">
-    <parameter name="browser" value="edge"/>
+  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.qa.automationtesting.testcases.DateickerTest"/>
     </classes>
-  </test> <!-- edgeTest -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
