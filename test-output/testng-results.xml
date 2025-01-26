@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14469" started-at="2025-01-26T17:07:07Z" finished-at="2025-01-26T17:07:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14469" started-at="2025-01-26T17:07:07Z" finished-at="2025-01-26T17:07:22Z">
+      <class name="com.qa.automationtesting.testcases.DateickerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@2ef9b8bc]" name="setup" is-config="true" duration-ms="8428" started-at="2025-01-26T22:37:07Z" finished-at="2025-01-26T22:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyDatePickerFuture()[pri:1, instance:com.qa.automationtesting.testcases.DateickerTest@2ef9b8bc]" name="verifyDatePickerFuture" duration-ms="3916" started-at="2025-01-26T22:37:16Z" finished-at="2025-01-26T22:37:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDatePickerFuture -->
+        <test-method status="PASS" signature="verifyDatepicker2()[pri:2, instance:com.qa.automationtesting.testcases.DateickerTest@2ef9b8bc]" name="verifyDatepicker2" duration-ms="1238" started-at="2025-01-26T22:37:20Z" finished-at="2025-01-26T22:37:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDatepicker2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@2ef9b8bc]" name="tearDown" is-config="true" duration-ms="865" started-at="2025-01-26T22:37:21Z" finished-at="2025-01-26T22:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.automationtesting.testcases.DateickerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
