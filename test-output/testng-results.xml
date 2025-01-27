@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="157509" started-at="2025-01-26T17:46:33Z" finished-at="2025-01-26T17:49:11Z">
+  <suite started-at="2025-01-27T12:57:22 IST" name="Suite" finished-at="2025-01-27T12:58:07 IST" duration-ms="45109">
     <groups>
     </groups>
-    <test name="edgeTest" duration-ms="56800" started-at="2025-01-26T17:46:33Z" finished-at="2025-01-26T17:47:30Z">
+    <test started-at="2025-01-27T12:57:22 IST" name="Test" finished-at="2025-01-27T12:58:07 IST" duration-ms="45109">
       <class name="com.qa.automationtesting.testcases.DateickerTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@7225790e]" name="setup" is-config="true" duration-ms="48722" started-at="2025-01-26T23:16:33Z" finished-at="2025-01-26T23:17:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyDatePickerFuture()[pri:1, instance:com.qa.automationtesting.testcases.DateickerTest@7225790e]" name="verifyDatePickerFuture" duration-ms="5956" started-at="2025-01-26T23:17:22Z" finished-at="2025-01-26T23:17:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDatePickerFuture -->
-        <test-method status="PASS" signature="verifyDatepicker2()[pri:2, instance:com.qa.automationtesting.testcases.DateickerTest@7225790e]" name="verifyDatepicker2" duration-ms="2090" started-at="2025-01-26T23:17:28Z" finished-at="2025-01-26T23:17:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDatepicker2 -->
-      </class> <!-- com.qa.automationtesting.testcases.DateickerTest -->
-    </test> <!-- edgeTest -->
-    <test name="chromeTest" duration-ms="157509" started-at="2025-01-26T17:46:33Z" finished-at="2025-01-26T17:49:11Z">
-      <class name="com.qa.automationtesting.testcases.DateickerTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@60addb54]" name="setup" is-config="true" duration-ms="155717" started-at="2025-01-26T23:16:33Z" finished-at="2025-01-26T23:19:09Z">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:22 IST" name="setup" finished-at="2025-01-27T12:57:49 IST" duration-ms="26659" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyDatePickerFuture()[pri:1, instance:com.qa.automationtesting.testcases.DateickerTest@60addb54]" name="verifyDatePickerFuture" duration-ms="619" started-at="2025-01-26T23:19:09Z" finished-at="2025-01-26T23:19:10Z">
+        <test-method signature="verifyDatePickerFuture()[pri:1, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:49 IST" name="verifyDatePickerFuture" finished-at="2025-01-27T12:57:51 IST" duration-ms="2740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDatePickerFuture -->
-        <test-method status="PASS" signature="verifyDatepicker2()[pri:2, instance:com.qa.automationtesting.testcases.DateickerTest@60addb54]" name="verifyDatepicker2" duration-ms="1155" started-at="2025-01-26T23:19:10Z" finished-at="2025-01-26T23:19:11Z">
+        <test-method signature="verifyPastDate()[pri:2, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:51 IST" name="verifyPastDate" finished-at="2025-01-27T12:58:06 IST" duration-ms="15014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPastDate -->
+        <test-method signature="verifyDatepicker2()[pri:3, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:58:06 IST" name="verifyDatepicker2" finished-at="2025-01-27T12:58:07 IST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDatepicker2 -->
       </class> <!-- com.qa.automationtesting.testcases.DateickerTest -->
-    </test> <!-- chromeTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -28,6 +28,9 @@ public List<WebElement> selectdays;
 @FindBy(xpath="//span[text()='Next']")
 public  WebElement nextbtn;
 
+@FindBy(xpath="//span[text()='Prev']")
+public WebElement prevbtn;
+
 //below are datepicker2 elements
 @FindBy(xpath="//input[@id='txtDate']")
 WebElement datepicker2;
@@ -49,22 +52,35 @@ public AutomationTestingPracticepage(){
 	PageFactory.initElements(driver, this);
 }
 
+//future date
 public String clickOnDatePicket1() {
 	Utilsmethods.scrollPageTillEmement(datepicker1);
 	datepicker1.click();
-	Utilsmethods.futurDateSelect("March", "2027", "15");
+	System.out.println(prop.getProperty("expectedmonthdp1"));
+	System.out.println(prop.getProperty("expectedyeardp1"));
+	System.out.println(prop.getProperty("expecteddatedp1"));
+	Utilsmethods.futurDateSelect(prop.getProperty("expectedmonthdp1"), prop.getProperty("expectedyeardp1"), prop.getProperty("expecteddatedp1"));
+	
 	return datepicker1.getAttribute("value");
 	
+}
+
+//pastdate
+public String clickOndatepicket11() {
+	datepicker1.click();
+	Utilsmethods.pastDateSelect(prop.getProperty("expectedmonthdp11"), prop.getProperty("expectedyeardp11"), prop.getProperty("expecteddatedp11"));
+	return datepicker1.getAttribute("value");
+
 }
 
 public String clickOnDatePicker2() {
 	try {
 	datepicker2.click();
 	Utilsmethods.scrollPageTillEmement(datepicker2);
-	Utilsmethods.selectFromDropDown(selectyear, "2027");
-	Utilsmethods.selectFromDropDown(selectmonth, "Mar");
+	Utilsmethods.selectFromDropDown(selectyear, prop.getProperty("expectedyearfordp2"));
+	Utilsmethods.selectFromDropDown(selectmonth, prop.getProperty("expectedmonthfordp2"));
 	for(WebElement selectdate: selectdates) {
-		if(selectdate.getText().equals("15")) {
+		if(selectdate.getText().equals(prop.get("expecteddatefordp2"))) {
 			selectdate.click();
 		}
 	}

@@ -1,0 +1,15 @@
+url=""
+
+
+//Testdata
+//datepicker test data
+
+expectedmonthdp1 = March
+expectedyeardp1 = 2027
+expecteddatedp1 = 15
+expectedmonthdp11 = January
+expectedyeardp11 = 2023
+expecteddatedp11 = 15
+expectedmonthfordp2 = Mar
+expectedyearfordp2 = 2027
+expecteddatefordp2 = 15

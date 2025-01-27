@@ -22,7 +22,8 @@ import com.qa.automationtesting.pages.AutomationTestingPracticepage;
 
 public class DateickerTest extends BaseClass {
 
-	AutomationTestingPracticepage ap;
+	
+AutomationTestingPracticepage ap;
 
 @BeforeClass
 @Parameters("browser")
@@ -39,6 +40,12 @@ void verifyDatePickerFuture() {
 }
 
 @Test(priority=2)
+void verifyPastDate() {
+	String date = ap.clickOndatepicket11();
+	Assert.assertEquals(date, "01/15/2023");
+}
+
+@Test(priority=3)
 void verifyDatepicker2() {
 	String date2 = ap.clickOnDatePicker2();
 	Assert.assertEquals(date2, "15/03/2027");
