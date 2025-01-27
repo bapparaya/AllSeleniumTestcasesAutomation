@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-27T12:57:22 IST" name="Suite" finished-at="2025-01-27T12:58:07 IST" duration-ms="45109">
+  <suite name="Suite" duration-ms="11418" started-at="2025-01-27T17:52:45Z" finished-at="2025-01-27T17:52:57Z">
     <groups>
     </groups>
-    <test started-at="2025-01-27T12:57:22 IST" name="Test" finished-at="2025-01-27T12:58:07 IST" duration-ms="45109">
-      <class name="com.qa.automationtesting.testcases.DateickerTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:22 IST" name="setup" finished-at="2025-01-27T12:57:49 IST" duration-ms="26659" status="PASS">
+    <test name="Test" duration-ms="11418" started-at="2025-01-27T17:52:45Z" finished-at="2025-01-27T17:52:57Z">
+      <class name="com.qa.automationtesting.testcases.AutosuggestionTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="setUp" is-config="true" duration-ms="10312" started-at="2025-01-27T23:22:45Z" finished-at="2025-01-27T23:22:56Z">
           <params>
             <param index="0">
               <value>
@@ -17,20 +17,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyDatePickerFuture()[pri:1, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:49 IST" name="verifyDatePickerFuture" finished-at="2025-01-27T12:57:51 IST" duration-ms="2740" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAutofill()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="testAutofill" duration-ms="1070" started-at="2025-01-27T23:22:56Z" finished-at="2025-01-27T23:22:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDatePickerFuture -->
-        <test-method signature="verifyPastDate()[pri:2, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:57:51 IST" name="verifyPastDate" finished-at="2025-01-27T12:58:06 IST" duration-ms="15014" status="PASS">
+        </test-method> <!-- testAutofill -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="tearDown" is-config="true" duration-ms="1" started-at="2025-01-27T23:22:57Z" finished-at="2025-01-27T23:22:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPastDate -->
-        <test-method signature="verifyDatepicker2()[pri:3, instance:com.qa.automationtesting.testcases.DateickerTest@1033576a]" started-at="2025-01-27T12:58:06 IST" name="verifyDatepicker2" finished-at="2025-01-27T12:58:07 IST" duration-ms="645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDatepicker2 -->
-      </class> <!-- com.qa.automationtesting.testcases.DateickerTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.automationtesting.testcases.AutosuggestionTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

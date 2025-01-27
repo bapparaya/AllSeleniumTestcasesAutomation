@@ -5,7 +5,7 @@
   <test name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.qa.automationtesting.testcases.DateickerTest"/>
+      <class name="com.qa.automationtesting.testcases.AutosuggestionTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

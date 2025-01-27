@@ -13,3 +13,8 @@ expecteddatedp11 = 15
 expectedmonthfordp2 = Mar
 expectedyearfordp2 = 2027
 expecteddatefordp2 = 15
+
+//searchtext
+
+searchtext= seleniu
+findtext = Selenium
