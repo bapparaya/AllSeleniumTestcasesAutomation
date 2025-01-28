@@ -1,5 +1,6 @@
 package com.qa.automationtesting.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -21,7 +22,8 @@ void setUp(String browser) {
 
 @Test
 void testAutofill() {
-	aup.clickonSearch();
+	String title=aup.clickonSearch();
+	Assert.assertEquals(title, "Selenium - Wikipedia");
 }
 @AfterClass
 void tearDown() {

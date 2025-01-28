@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11418" started-at="2025-01-27T17:52:45Z" finished-at="2025-01-27T17:52:57Z">
+  <suite started-at="2025-01-28T09:11:51 IST" name="Suite" finished-at="2025-01-28T09:12:29 IST" duration-ms="38157">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11418" started-at="2025-01-27T17:52:45Z" finished-at="2025-01-27T17:52:57Z">
+    <test started-at="2025-01-28T09:11:51 IST" name="Test" finished-at="2025-01-28T09:12:29 IST" duration-ms="38157">
       <class name="com.qa.automationtesting.testcases.AutosuggestionTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="setUp" is-config="true" duration-ms="10312" started-at="2025-01-27T23:22:45Z" finished-at="2025-01-27T23:22:56Z">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@303cf2ba]" started-at="2025-01-28T09:11:51 IST" name="setUp" finished-at="2025-01-28T09:12:19 IST" duration-ms="27860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAutofill()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="testAutofill" duration-ms="1070" started-at="2025-01-27T23:22:56Z" finished-at="2025-01-27T23:22:57Z">
+        <test-method signature="testAutofill()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@303cf2ba]" started-at="2025-01-28T09:12:19 IST" name="testAutofill" finished-at="2025-01-28T09:12:29 IST" duration-ms="10036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAutofill -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@2c9f9fb0]" name="tearDown" is-config="true" duration-ms="1" started-at="2025-01-27T23:22:57Z" finished-at="2025-01-27T23:22:57Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.automationtesting.testcases.AutosuggestionTest@303cf2ba]" started-at="2025-01-28T09:12:29 IST" name="tearDown" finished-at="2025-01-28T09:12:29 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
