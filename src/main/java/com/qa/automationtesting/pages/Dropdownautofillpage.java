@@ -1,6 +1,7 @@
 package com.qa.automationtesting.pages;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,8 @@ public class Dropdownautofillpage extends BaseClass {
 	}
 	
 	
-	public void clickonSearch() {
+	public String  clickonSearch() {
+		String parentwindow = driver.getWindowHandle();
 		searchbox.sendKeys(prop.getProperty("searchtext"));
 		searchbtn.click();
 		for(WebElement suggestion:autosuggestions) {
@@ -39,6 +41,15 @@ public class Dropdownautofillpage extends BaseClass {
 			}
 		}
 		
+	Set<String> allwindows=	driver.getWindowHandles();
+	for(String window:allwindows) {
+		if(!window.equals(parentwindow)) {
+			driver.switchTo().window(window);
+			
+		}
+		
+	}
+	return driver.getTitle();	
 		
 		
 		
