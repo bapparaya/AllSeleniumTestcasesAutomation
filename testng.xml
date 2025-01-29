@@ -5,7 +5,7 @@
   <test name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.qa.automationtesting.testcases.AutosuggestionTest"/>
+      <class name="com.qa.automationtesting.testcases.DynamicwebtableTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
