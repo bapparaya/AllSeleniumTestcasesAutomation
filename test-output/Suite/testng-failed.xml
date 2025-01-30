@@ -4,13 +4,12 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.automationtesting.testcases.DynamicwebtableTest">
+      <class name="com.qa.automationtesting.testcases.VerifyBrokenLinksTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loopverify"/>
-          <include name="setUp"/>
+          <include name="verifylinksarebroken"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.automationtesting.testcases.DynamicwebtableTest -->
+      </class> <!-- com.qa.automationtesting.testcases.VerifyBrokenLinksTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
