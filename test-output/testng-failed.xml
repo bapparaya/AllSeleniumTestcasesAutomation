@@ -4,12 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.automationtesting.testcases.VerifyBrokenLinksTest">
+      <class name="com.qa.automationtesting.testcases.ActionclassTest">
         <methods>
-          <include name="verifylinksarebroken"/>
-          <include name="setup"/>
+          <include name="lefttorighttest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.automationtesting.testcases.VerifyBrokenLinksTest -->
+      </class> <!-- com.qa.automationtesting.testcases.ActionclassTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

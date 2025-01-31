@@ -5,7 +5,7 @@
   <test name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.qa.automationtesting.testcases.VerifyBrokenLinksTest"/>
+      <class name="com.qa.automationtesting.testcases.ActionclassTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
