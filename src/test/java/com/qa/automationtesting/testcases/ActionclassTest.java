@@ -21,7 +21,7 @@ void setUp(String browser) {
 	 acp = new Actionclassmothodspage();
 }
 
-@Test
+@Test(priority=1)
 void lefttorighttest() {
 	String amountrange = null;
 	try {
@@ -30,6 +30,12 @@ void lefttorighttest() {
 		e.printStackTrace();
 	}
 	Assert.assertEquals(amountrange, "$247 - $300");
+}
+
+@Test(priority=2)
+void verifydraganddrop() {
+	String message = acp.dragAndDrop();
+	Assert.assertEquals(message, "Dropped!");
 }
 
 @AfterMethod

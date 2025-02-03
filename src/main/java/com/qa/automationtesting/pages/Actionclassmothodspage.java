@@ -16,6 +16,13 @@ WebElement startslider;
 @FindBy(xpath="//input[@id='amount']")
 WebElement amountrange;
 
+//drag and drop elements
+@FindBy(xpath="//div[@id='draggable']")
+WebElement drag;
+
+@FindBy(xpath="//div[@id='droppable']")
+WebElement drop;
+
 public Actionclassmothodspage() {
 	super();
 	PageFactory.initElements(driver, this);
@@ -28,6 +35,13 @@ public String  slidefromlefttoright() throws InterruptedException {
 	ac.clickAndHold(startslider).moveByOffset(100, 0).perform();
 	return amountrange.getAttribute("value");
 	
+}
+
+public String dragAndDrop() {
+	Utilsmethods.scrollPageTillEmement(drag);
+	Actions action = new Actions(driver);
+	action.dragAndDrop(drag, drop).perform();
+	return drop.getText();
 }
 
 
