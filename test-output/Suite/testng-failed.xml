@@ -6,8 +6,7 @@
     <classes>
       <class name="com.qa.automationtesting.testcases.ActionclassTest">
         <methods>
-          <include name="lefttorighttest"/>
-          <include name="tearDown"/>
+          <include name="verifydraganddrop"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.automationtesting.testcases.ActionclassTest -->
