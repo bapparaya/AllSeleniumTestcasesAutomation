@@ -31,6 +31,7 @@ public class BaseClass {
 	}
 
 public void initialize(String browser){
+	//this is added by bapparaya
 	if(browser.equals("chrome")) {
 	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\BAPPARAYA R\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 	WebDriverManager.chromedriver().setup();
