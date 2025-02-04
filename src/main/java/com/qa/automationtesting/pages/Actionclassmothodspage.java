@@ -23,6 +23,13 @@ WebElement drag;
 @FindBy(xpath="//div[@id='droppable']")
 WebElement drop;
 
+//scrolling using actionclass
+@FindBy(xpath="//input[@id='comboBox']")
+WebElement dropdown;
+
+@FindBy(xpath="//div[@id='dropdown']/div[40]")
+WebElement item40;
+
 public Actionclassmothodspage() {
 	super();
 	PageFactory.initElements(driver, this);
@@ -42,6 +49,22 @@ public String dragAndDrop() {
 	Actions action = new Actions(driver);
 	action.dragAndDrop(drag, drop).perform();
 	return drop.getText();
+}
+
+public String scrollDropDown() {
+	Utilsmethods.scrollPageTillEmement(dropdown);
+	dropdown.click();
+	Actions action = new Actions(driver);
+	action.scrollToElement(item40).perform();
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	item40.click();
+	
+	return dropdown.getAttribute("value");
 }
 
 
