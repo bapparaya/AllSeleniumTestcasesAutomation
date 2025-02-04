@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.automationtesting.testcases.ActionclassTest" class="method navigator-link" hash-for-method="verifydraganddrop">verifydraganddrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.automationtesting.testcases.ActionclassTest" class="method navigator-link" hash-for-method="verifyscrollDropdown">verifyscrollDropdown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,6 +146,13 @@
                   <a name="verifydraganddrop">
                   </a> <!-- verifydraganddrop -->
                   <span class="method-name">verifydraganddrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyscrollDropdown">
+                  </a> <!-- verifyscrollDropdown -->
+                  <span class="method-name">verifyscrollDropdown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,20 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'lefttorighttest')
+data.setCell(0, 1, 'verifyscrollDropdown')
 data.setCell(0, 2, 'com.qa.automationtesting.testcases.ActionclassTest')
-data.setCell(0, 3, 1440);
+data.setCell(0, 3, 10493);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifydraganddrop')
+data.setCell(1, 1, 'lefttorighttest')
 data.setCell(1, 2, 'com.qa.automationtesting.testcases.ActionclassTest')
-data.setCell(1, 3, 376);
+data.setCell(1, 3, 1422);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifydraganddrop')
+data.setCell(2, 2, 'com.qa.automationtesting.testcases.ActionclassTest')
+data.setCell(2, 3, 305);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,30 +254,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.automationtesting.testcases.ActionclassTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">lefttorighttest</span>
-                <span class="method-start">14129 ms</span>
+                <span class="method-start">12151 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15573 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">15786 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifydraganddrop</span>
-                <span class="method-start">25126 ms</span>
+                <span class="method-start">13579 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="test-method">
+                <span class="method-name">verifyscrollDropdown</span>
+                <span class="method-start">13885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25503 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">24380 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
