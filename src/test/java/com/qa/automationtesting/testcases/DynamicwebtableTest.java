@@ -26,10 +26,16 @@ void setUp(String browser) {
 //	Assert.assertEquals(value, "0.0%");
 //}
 
+//@Test
+//void loopverify() {
+//	String memory = dp.loopVerifywebtable();
+//	Assert.assertEquals(memory, "93.7 MB");
+//}
+
 @Test
-void loopverify() {
-	String memory = dp.loopVerifywebtable();
-	Assert.assertEquals(memory, "93.7 MB");
+void verifypaginamtiontable() {
+	String price = dp.verifyPagination();
+	Assert.assertEquals(price, "$24.99");
 }
 @AfterMethod
 void tearDown() {

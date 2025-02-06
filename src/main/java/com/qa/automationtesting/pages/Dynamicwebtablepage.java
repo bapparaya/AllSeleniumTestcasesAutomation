@@ -18,6 +18,9 @@ List<WebElement> sysnames;
 @FindBy(xpath="//*[@id=\"rows\"]/tr[3]/td[5]")
 WebElement cpuusage;
 
+//pagination webtable elements
+//@FindBy(xpath="")
+
 public Dynamicwebtablepage() {
 	super();
 	PageFactory.initElements(driver, this);
@@ -44,6 +47,34 @@ public String loopVerifywebtable() {
 		}
 	}
 	return memory;
+}
+
+public String verifyPagination() {
+	
+	String price = null;
+		List<WebElement> pages = driver.findElements(By.xpath("//ul[@id='pagination']/li"));
+		for(int j=1;j<=pages.size();j++) {
+			driver.findElement(By.xpath("//ul[@id='pagination']/li["+j+"]")).click();
+			
+			List<WebElement> totalprodperpage= driver.findElements(By.xpath("//table[@id='productTable']/tbody/tr"));
+			for(int i=1;i<=totalprodperpage.size();i++) {
+			
+			String prod =	driver.findElement(By.xpath("//table[@id='productTable']/tbody/tr["+i+"]/td[2]")).getText();
+			System.out.println(prod);
+			if(prod.equals("Router")) {
+				By element =By.xpath("//table[@id='productTable']/tbody/tr["+i+"]/td[3]");
+				 price = driver.findElement(element).getText();
+				System.out.println(price);
+				return price; //stop searching after finding it
+			}
+			
+			
+			
+		}
+			
+		}
+		return price;
+			
 }
 
 
