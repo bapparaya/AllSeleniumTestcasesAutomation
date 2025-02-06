@@ -4,12 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.automationtesting.testcases.ActionclassTest">
+      <class name="com.qa.automationtesting.testcases.DynamicwebtableTest">
         <methods>
-          <include name="verifydraganddrop"/>
+          <include name="verifypaginamtiontable"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.automationtesting.testcases.ActionclassTest -->
+      </class> <!-- com.qa.automationtesting.testcases.DynamicwebtableTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
