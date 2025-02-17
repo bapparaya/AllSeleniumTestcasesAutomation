@@ -1,5 +1,6 @@
 package com.qa.automationtesting.pages;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -20,6 +21,10 @@ WebElement cpuusage;
 
 //pagination webtable elements
 //@FindBy(xpath="")
+
+//dynamic button
+@FindBy(xpath="//button[contains(@name, 'st')]")
+WebElement startAndStopbtn;
 
 public Dynamicwebtablepage() {
 	super();
@@ -75,6 +80,15 @@ public String verifyPagination() {
 		}
 		return price;
 			
+}
+
+public List<String> verifyDynamicButton() {
+	String beforebtn= startAndStopbtn.getText();
+	System.out.println(beforebtn);
+	startAndStopbtn.click();
+	String afterclkbtn = startAndStopbtn.getText();
+	System.out.println(afterclkbtn);
+	return Arrays.asList(beforebtn, afterclkbtn);
 }
 
 
