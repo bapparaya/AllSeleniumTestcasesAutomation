@@ -6,8 +6,8 @@
     <classes>
       <class name="com.qa.automationtesting.testcases.DynamicwebtableTest">
         <methods>
-          <include name="verifypaginamtiontable"/>
           <include name="tearDown"/>
+          <include name="verifyDynamicbtn"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.automationtesting.testcases.DynamicwebtableTest -->
