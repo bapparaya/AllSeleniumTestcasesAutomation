@@ -1,5 +1,8 @@
 url=""
 
+executionenv = local
+#executionenv = Seleniumgrid
+#executionenv = awsdocker
 
 //Testdata
 //datepicker test data

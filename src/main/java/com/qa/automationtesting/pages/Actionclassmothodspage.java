@@ -36,6 +36,7 @@ public Actionclassmothodspage() {
 }
 
 public String  slidefromlefttoright() throws InterruptedException {
+	//this is actionpage checking for conflict
 	Utilsmethods.scrollPageTillEmement(startslider);
 	Thread.sleep(1000);
 	Actions ac = new Actions(driver);

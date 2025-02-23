@@ -25,6 +25,7 @@ void setUp(String browser) {
 
 @Test(priority=1)
 void lefttorighttest() {
+	//just commenting
 	String amountrange = null;
 	try {
 	 amountrange =acp.slidefromlefttoright();
