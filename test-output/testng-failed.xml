@@ -8,16 +8,4 @@
       <class name="com.qa.automationtesting.testcases.Miscaleniuostest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.qa.automationtesting.testcases.Miscaleniuostest">
-        <methods>
-          <include name="verifySingleFileUpload"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.automationtesting.testcases.Miscaleniuostest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
