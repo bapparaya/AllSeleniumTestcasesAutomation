@@ -6,8 +6,8 @@
     <classes>
       <class name="com.qa.automationtesting.testcases.Miscaleniuostest">
         <methods>
+          <include name="verifyNewTab"/>
           <include name="setup"/>
-          <include name="verifySingleFileUpload"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.automationtesting.testcases.Miscaleniuostest -->

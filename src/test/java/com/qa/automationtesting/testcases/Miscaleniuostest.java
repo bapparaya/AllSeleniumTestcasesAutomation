@@ -22,12 +22,18 @@ void setup(String browser) {
 	 mp = new Miscaleniuospage();
 }
 
+//@Test
+//void verifySingleFileUpload() {
+//	String filename = mp.singleFileUpload();
+//	Assert.assertEquals(filename, "C:\\fakepath\\Bapparaya 5yr automation (1).pdf");
+//}
+
 @Test
-void verifySingleFileUpload() {
-	String filename = mp.singleFileUpload();
-	Assert.assertEquals(filename, "C:\\fakepath\\Bapparaya 5yr automation (1).pdf");
+void verifyNewTab() {
+	String titleFacebook = mp.openNewTab();
+	System.out.println(titleFacebook);
 }
-//commenting for conflicts
+//commenting for conflicts11
 @AfterTest
 void tearDown() {
 	

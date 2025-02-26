@@ -32,6 +32,7 @@ public Dynamicwebtablepage() {
 }
 
 public String verifywebtable() {
+	//dynamic page conflict test
 	String  cpuusagevalue = "";
 	for(WebElement sysname: sysnames) {
 		if(sysname.getText().equals("Chrome")){

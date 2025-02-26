@@ -1,6 +1,9 @@
 package com.qa.automationtesting.pages;
 
+import java.util.Set;
+
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,6 +19,25 @@ WebElement singlefileuploadbtn;
 public Miscaleniuospage(){
 	super();
 	PageFactory.initElements(driver, this);
+}
+
+//open the new tab and switch then open the new url
+public String openNewTab() {
+JavascriptExecutor js = (JavascriptExecutor) driver;
+String parentid = driver.getWindowHandle();
+System.out.println(parentid);
+js.executeScript("window.open()");
+Set<String> windows = driver.getWindowHandles();
+for(String window: windows) {
+	if(!window.equals(parentid)) {
+		driver.switchTo().window(window);
+		System.out.println(window);
+		driver.get("https://www.facebook.com/login/");
+		System.out.println(driver.getTitle());
+		return driver.getTitle();
+	}
+}
+return null;
 }
 
 
