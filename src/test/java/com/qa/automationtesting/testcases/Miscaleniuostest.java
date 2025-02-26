@@ -28,14 +28,14 @@ void setup(String browser) {
 //	Assert.assertEquals(filename, "C:\\fakepath\\Bapparaya 5yr automation (1).pdf");
 //}
 
-//commiting for conflict 2 change
+
 @Test
 void verifyNewTab() {
 	String titleFacebook = mp.openNewTab();
-	//12131313213System.out.println(titleFacebook);
+	
 	System.out.println(titleFacebook);
 }
-//commenting for conflicts11
+
 @AfterTest
 void tearDown() {
 	
