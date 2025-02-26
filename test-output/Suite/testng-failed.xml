@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.automationtesting.testcases.DynamicwebtableTest">
+      <class name="com.qa.automationtesting.testcases.Miscaleniuostest">
         <methods>
+          <include name="setup"/>
+          <include name="verifySingleFileUpload"/>
           <include name="tearDown"/>
-          <include name="verifyDynamicbtn"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.automationtesting.testcases.DynamicwebtableTest -->
+      </class> <!-- com.qa.automationtesting.testcases.Miscaleniuostest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
