@@ -33,6 +33,7 @@ void setup(String browser) {
 void verifyNewTab() {
 	String titleFacebook = mp.openNewTab();
 	System.out.println(titleFacebook);
+	System.out.println(titleFacebook);
 }
 //commenting for conflicts11
 @AfterTest
