@@ -32,7 +32,7 @@ void setup(String browser) {
 @Test
 void verifyNewTab() {
 	String titleFacebook = mp.openNewTab();
-	System.out.println(titleFacebook);
+	//12131313213System.out.println(titleFacebook);
 	System.out.println(titleFacebook);
 }
 //commenting for conflicts11
