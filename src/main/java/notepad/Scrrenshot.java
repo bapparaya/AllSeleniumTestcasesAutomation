@@ -36,7 +36,7 @@ public class Scrrenshot {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("arguments[0].scrollIntoView(true)", date);
 //		js.executeScript("window.scrollBy(0, document.body.scrollHeight)");
-//		js.executeScript("window.scrollTo(0,800)");
+//		js.executeScript("window.scrollTo(0,800)");11
 
 
 
