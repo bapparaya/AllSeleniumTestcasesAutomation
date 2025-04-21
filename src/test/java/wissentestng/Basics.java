@@ -12,7 +12,7 @@ public class Basics {
 	/*
 	 * annotations, Test, Before and After, Dataprovider,Parameter, Beforegroups
 	 * parameter, priority,groups,dataProviders,invocationCount
-	 * Logs,Report,Testng.xml,Assertionsasdasd
+	 * Logs,Report,Testng.xml,Assertionsasdasdas
 	 * 
 	 */
 	
