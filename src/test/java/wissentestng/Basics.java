@@ -16,7 +16,7 @@ public class Basics {
 	 * 
 	 */
 	
-	//123
+	//123asa
 	
 	Logger logger = LogManager.getLogger(this.getClass());
 	@BeforeGroups(groups = {"Sanity"})
