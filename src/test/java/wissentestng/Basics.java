@@ -16,6 +16,8 @@ public class Basics {
 	 * 
 	 */
 	
+	//123
+	
 	Logger logger = LogManager.getLogger(this.getClass());
 	@BeforeGroups(groups = {"Sanity"})
 	void beforegroup(){
